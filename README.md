@@ -17,3 +17,7 @@ LIST THE EMPLOYEES WORKING IN DEPATMENT 10 OR 20 IN DESCENDING ORDER?
 select ename,deptno from emp where deptno='10' or deptno='20'order by deptno desc;
 LIST THE NAME WHOSE NAMES HAS A SET OF LL TOGETHER?
 select ename from emp where ename like '%ll%';
+LIST THE EMPLOYEES WHO JOINED IN THE YEAR MONTH OF DECEMBER?
+select ename,hiredate from emp where hiredate like '%-12-%';
+LIST THE EMPLOYEES ANNUALSAL WHOSE IN BETWEEN 22000 TO 45000?
+select ename,sal*12 as annaulsal from emp where sal*12 between 22000 and 45000;
